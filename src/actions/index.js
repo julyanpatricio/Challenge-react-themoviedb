@@ -29,8 +29,6 @@ export function getMoviesByName(name) {
   };
 }
 
-
-
 export function getMovieDetail(id){
   return function(dispatch) {
     return axios.get(`/movie/${id}?api_key=${API_KEY}`) 
@@ -41,13 +39,6 @@ export function getMovieDetail(id){
             return dispatch({ type: "GET_MOVIE_DETAIL", payload: null })
           })
   };
-}
-
-export function changePage({currentPage,startIndex,endIndex}){
-  return {
-    type: "CHANGE_PAGE",
-    payload: {currentPage,startIndex,endIndex}
-  }
 }
 
 export function clearPageDetail() {
