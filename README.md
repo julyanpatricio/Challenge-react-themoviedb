@@ -1,5 +1,6 @@
-# App creada utilizando Create React App
+# React App Themoviedb
 
+Una app para ver un listado de peliculas, buscar por nombre, filtrar por rating y ver los detalles de las mismas utilizando la api de https://www.themoviedb.org
 
 ## Primer paso
 
