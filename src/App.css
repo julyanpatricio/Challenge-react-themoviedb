@@ -1,6 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
+html, body, #root, .App{
+  
+  background-color: rgb(50 56 62);
+  min-width: 55vmax;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+#logo{
+  max-height: 22vmin;
+}
+
+.badge-dark-light {
+  color: #fff;
+  background-color: #575a5e;
+}
+
+.badge-pill {
+      
+  font-size: inherit;
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  margin: 0.2%;
+  border-radius: 10rem;
+}
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+
+
+button{
+  cursor: pointer;
+}
+
+
 .App {
   text-align: center;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +95,4 @@
     transform: rotate(360deg);
   }
 }
+

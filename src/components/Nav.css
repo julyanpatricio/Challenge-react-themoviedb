@@ -1,0 +1,105 @@
+.navbar {
+    color: aliceblue;
+    padding-inline: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        background-position-x: center;
+        flex-wrap: wrap;
+}
+
+.nav-izq{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+.navbar nav {
+    height: auto;
+    width: 20%;
+}
+
+.list {
+  margin:0;
+padding: 0;
+    list-style: none;
+    display: flex;
+        flex-flow: row;
+    align-items: baseline;
+    height: 100%;
+    flex-direction: column;
+}
+
+.list-item {
+    margin: 0;
+    width: 90%;
+}
+
+.list-item a {
+    color: white;
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+}
+
+.list-item a:hover,
+.list-item a.active {
+    background-color: #808080;
+    color: white;
+}
+
+.stars-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+input[type="radio"] {
+    display: none;
+  }
+
+#estrellas{
+font-size: 150%;
+}
+
+.rating { 
+    direction: rtl;
+    unicode-bidi: bidi-override; 
+}
+
+#estrellas:hover,
+#estrellas:hover ~ #estrellas {
+  color: orange;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked ~ #estrellas {
+  color: orange;
+}
+
+input[type="radio"]{
+  box-sizing: border-box;
+  padding: 0;
+  margin-left: 3px;
+  margin-right: 12px;
+}
+
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: bolder;
+  vertical-align: middle;
+  cursor: pointer;
+}

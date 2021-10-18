@@ -1,0 +1,152 @@
+.moviesList{
+font-size: 2rem;
+    text-align: center;
+    display: flex;
+    gap: 2% 6%;
+    justify-content: center;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.bg-dark {
+  /* background-color: #343a40 !important; */
+  background-color: transparent !important;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 95vw;
+  margin-bottom: 10%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-size: 20px;
+}
+
+.card-background {
+  border-width: thick;
+  border-radius: 0px 200px 0px 0px;
+  border-right: 5px solid #ffc107;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-img-top {
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.h2-position {
+  left: 2%;
+    top: 54%;
+    width: 95%;
+    font-size: 155%;
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 70%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.badge-position {
+  left: 2%;
+  top: 4%;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+a.badge-dark:hover, a.badge-dark:focus {
+  color: #fff;
+  background-color: #1d2124;
+}
+
+a.badge-dark:focus, a.badge-dark.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+
+.genre-badge-position {
+  left: 3%;
+  top: 75%;
+}
+
+.genre-badge-margin {
+  margin-right: 0.2em;
+}
+
+.right-badge {
+ right: 0%;
+    top: 4%;
+}
+
+.loading-anim-size {
+  width: 5rem;
+  height: 5rem;
+}
+
+.img-zoom-container {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  height: 250px;
+  width: 420px;
+    max-width: 95vw;
+  display: block;
+  position: relative;
+  transition: all 2s ease-out;
+}
+
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
