@@ -11,7 +11,11 @@ test('renders search movies button', () => {
   expect(button).toBeInTheDocument();
 });
 
-test("should not have the back button", () => {
+test("background-size in navbar should be cover", () => {
   const { container } = Render(<App />)
-  expect(container).toBeVisible()
+  
+  const navbar = container.querySelector(".navbar")
+  expect(navbar).toBeVisible()
+  expect(navbar).toHaveStyle("background-size: cover")
+
 });

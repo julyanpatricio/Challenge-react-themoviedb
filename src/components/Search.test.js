@@ -10,4 +10,6 @@ test("renders movies search", () => {
   );
   const button = container.querySelector(".button-search")
   expect(button).toBeVisible()
+  expect(button).toHaveClass("is-green")
+  expect(button).toMatchSnapshot()
 });
