@@ -103,3 +103,8 @@ input[type="radio"]{
   vertical-align: middle;
   cursor: pointer;
 }
+
+.is-green{
+  background-color: green;
+  color: white;
+}

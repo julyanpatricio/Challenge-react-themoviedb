@@ -35,7 +35,7 @@ function Search() {
         value={movieSearch.name}
         onChange={handleChange} 
       />
-      <button type="submit" className='button-search'>Search movies</button>
+      <button type="submit" className='button-search is-green'>Search movies</button>
     </form>
   )
 }

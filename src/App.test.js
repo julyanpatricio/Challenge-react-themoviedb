@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { screen } from '@testing-library/react';
+import App from "./App";
+import {Render} from "./utils/testServer"
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+beforeAll(() => {
+  Render(<App  />)
+})
+
+test('renders search movies button', () => {
+  const button = screen.getByText(/Search movies/i);
+  expect(button).toBeInTheDocument();
+});
+
+test("should not have the back button", () => {
+  const { container } = Render(<App />)
+  expect(container).toBeVisible()
 });

@@ -33,7 +33,7 @@ function Nav() {
                 <Link className="navbar-brand" to="/">
                     <img id="logo" src={logoMovies} height={80} className="d-inline-block align-top" alt="" />
                 </Link>
-                {urlPatch !== '/' ? <Link style={{ textDecoration: 'none',marginLeft: '3%'}} to="/">{`<<< Back to movies`}</Link> : null}
+                {urlPatch !== '/' ? <Link className="back-button" style={{ textDecoration: 'none',marginLeft: '3%'}} to="/">{`<<< Back to movies`}</Link> : null}
             </div>
             <nav>
                 <ul className="list">

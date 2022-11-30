@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders movies search 1`] = `
+<button
+  class="button-search is-green"
+  type="submit"
+>
+  Search movies
+</button>
+`;
